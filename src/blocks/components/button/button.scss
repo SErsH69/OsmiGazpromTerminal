@@ -1,0 +1,27 @@
+.button {
+    font-family: 'texgyreheros', Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: vw(20);
+    line-height: 110%;
+    color: #FFFFFF;
+    cursor: pointer;
+    background: #1400DC;
+    padding: vw(17) vw(19);
+    transition: all .3s ease-out;
+    text-align: center;
+    width: max-content;
+    min-width: vw(196);
+    text-decoration: none;
+    border: 0;
+    &:hover {
+        background: #FF5F05;
+    }
+}
+.isTablet, .isMobile {
+    .button {
+        display: inline-block;
+        font-size: 18px;
+        padding: 18px 27px;
+    }
+}

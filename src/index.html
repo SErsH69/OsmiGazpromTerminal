@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="icon" href="files/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="files/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="files/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="files/favicon/favicon-16x16.png" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    @@include('blocks/modules/preloader/preloader.html', {})
+    <div class="wrapper" id="app">
+        <div class="wrapper__in" :class="{isMobile, isTablet}">
+            @@include('blocks/modules/preloader/preloader.html', {})
+            @@include('blocks/modules/header/header.html', {})
+            <main id="link1">
+                @@include('blocks/modules/main_first/main_first.html', {})
+                @@include('blocks/modules/main_numbers/main_numbers.html', {})
+                @@include('blocks/modules/main__value/main__value.html', {})
+                @@include('blocks/modules/main_video/main_video.html', {})
+                @@include('blocks/modules/main_red-block/main_red-block.html', {})
+                @@include('blocks/modules/main_ques/main_ques.html', {})
+                @@include('blocks/modules/main_projects/main_projects.html', {})
+                @@include('blocks/modules/main_news/main_news.html', {})
+                @@include('blocks/modules/main_terminal/main_terminal.html', {})
+                @@include('blocks/modules/main_form/main_form.html', {})
+            </main>
+            @@include('blocks/modules/footer/footer.html', {})
+            @@include('blocks/modules/modals/main.modal.html', {})
+        </div>
+    </div>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
